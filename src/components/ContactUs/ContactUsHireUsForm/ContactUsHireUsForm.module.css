@@ -1,0 +1,159 @@
+.contact-us__hire-us-form{
+    margin-bottom: 200px;
+    transition: var(--transition);
+}
+.contact-us__hire-us-form--hidden{
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+
+}
+.contact-us__form-field-cont{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.contact-us__form-field-label{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Cairo';
+    margin-bottom: 10px;
+    display: block;
+    color:var(--main-text-color)
+}
+.contact-us__form-field-required{
+    color:#FF0000
+}
+.contact-us__form-field-input{
+    padding: 5px 25px ;
+    height: 60px;
+    outline:0;
+    border-radius: 40px;
+    border:1px solid var(--secondary-color);
+}
+.contact-us__form-field-need-cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-us__form-field-select-cont{
+
+}
+.contact-us__check-box-label{
+    margin: 0 20px 15px 0;
+    background-color: white;
+    border: 1px solid var(--main-color);
+    padding: 17px 35px;
+    border-radius: 40px;
+    color: var(--main-text-color);
+    cursor: pointer;
+}
+.contact-us__check-box:checked ~ .contact-us__check-box-label{
+    background-color: var(--main-color);
+    color:white
+
+}
+.contact-us__check-box{
+    display: none;
+}
+.contact-us__form-field-textarea{
+    padding: 15px 25px  ;
+    outline:0;
+    border-radius: 30px;
+    border:1px solid var(--secondary-color);
+    outline:0;
+    margin-bottom: 20px;
+}
+.contact-us__form-field-input-file{
+    display: none;
+}
+.contact-us__form-field-file--upload{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+.contact-us__file-upload-icon{
+    width: 25px;
+    color: #B1B6C9;
+}
+.contact-us__file-upload-note{
+    color: #B1B6C9;
+}
+.contact-us__form-field-privacy-cont{
+    flex-direction: row;
+    align-items: center;
+}
+.contact-us__terms-conditions-label{
+    font-size: 24px;
+    display: flex;
+    align-items: center
+}
+.contact-us__form-field-privacy{
+    color: var(--main-color);
+    transition:var(--transition)
+}
+.contact-us__form-field-privacy:hover{
+    color: var(--main-color)
+}
+.contact-us__submit-form{
+    padding: 18px 50px;
+    background-color: var(--main-color);
+    color: white;
+    border: 0;
+    border-radius: 30px
+}
+.contact-us__terms-conditions-input{
+    display: none;
+}
+.contact-us__terms-conditions-input-shown{
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    margin-left: 3px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid black;
+    margin-right: 20px;
+    margin-inline-end: 20px;
+}
+.contact-us__terms-conditions-input:checked ~ .contact-us__terms-conditions-label .contact-us__terms-conditions-input-shown{
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+.contact-us__terms-conditions-icon{
+    color:white
+}
+
+
+@media (max-width:992px) {
+    .contact-us__submit-form-cont{
+        display: flex;
+        width: 100%;
+    }
+    .contact-us__submit-form{
+        margin: auto;
+    }
+    .contact-us__hire-us-form{
+        margin-bottom: 100px;
+    }
+}
+@media (max-width:426px) {
+    .contact-us__terms-conditions-label{
+        font-size: 20px;
+    }
+    .contact-us__terms-conditions-input-shown{
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+        margin-inline-end: 10px;
+        border-radius: 10px;
+    }
+    .contact-us__check-box-label{
+        margin:0px 10px 10px 0;
+        padding: 13px 30px;
+    }
+}

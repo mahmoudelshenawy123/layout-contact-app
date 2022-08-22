@@ -1,0 +1,26 @@
+.contact-us__FAQ{
+    margin-bottom: 100px;
+}
+.contact-us__FAQ-heading{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.contact-us__FAQ-content{
+    font-size:20px;
+    line-height: 35px;
+    color:#23262B
+}
+@media (max-width:992px){
+    .contact-us__FAQ-heading{
+        font-size:30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+@media (max-width:426px){
+    .contact-us__FAQ-content{
+        font-size:20px;
+    }
+
+}

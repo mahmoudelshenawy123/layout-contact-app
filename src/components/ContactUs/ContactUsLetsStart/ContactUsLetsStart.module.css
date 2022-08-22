@@ -1,0 +1,36 @@
+.contact-us__lets-start{
+    margin-bottom: 100px;
+}
+
+.contact-us__lets-start-heading{
+    
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.contact-us__lets-start-content{
+    font-size:25px;
+    line-height: 35px;
+    color:var(--main-text-color)
+}
+.contact-us__lets-start-mail{
+    font-weight: bold;
+    text-decoration: underline;
+    color:var(--main-text-color)
+}
+@media (max-width:992px){
+    .contact-us__lets-start-heading{
+        font-size:30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+@media (max-width:426px){
+    .contact-us__lets-start-content{
+        font-size:20px;
+    }
+    .contact-us__lets-start{
+        margin-bottom: 60px;
+    }
+    
+}

@@ -1,0 +1,31 @@
+.contact-us__types-cont{
+    margin-bottom: 40px;
+    display: flex;
+}
+.contact-us__types-button{
+    padding: 17px 40px;
+    border: 1px solid var(--main-text-color);
+    transition :var(--transition);
+    background-color: white;
+    color: var(--main-text-color);
+    border-radius: 30px;
+    font-weight:500
+}
+.contact-us__types-button:first-of-type{
+    margin-right: 15px;
+    margin-inline-end: 15px;
+}
+.contact-us__types-button--active{
+    background-color: var(--main-text-color);
+    color:white;
+}
+@media (max-width:769px) {
+    .contact-us__types-cont{
+        justify-content: space-between;
+    }
+    .contact-us__types-button{
+        width: 100%;
+        padding: 10px 40px;
+    }
+    
+}

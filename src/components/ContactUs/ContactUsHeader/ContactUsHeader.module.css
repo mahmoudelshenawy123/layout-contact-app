@@ -1,0 +1,10 @@
+#contact-us-header{
+    min-height: 80vh ;
+    background-color:grey;
+    margin-bottom: 100px;
+}
+@media (max-width:426px) {
+    #contact-us-header{
+        margin-bottom: 60px;
+    }
+}

@@ -1,13 +1,23 @@
+:root{
+  --main-color:#42BF64 ;
+  --secondary-color:#CDD0DB;
+  --main-text-color:#23262B;
+  --transition: all .3s linear ;
+}
+@font-face {
+  font-family: 'Cairo';
+  src: url('/src/assets/fonts/Cairo-VariableFont_wght.ttf');
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Cairo", Sans-serif;
+}
+input::placeholder ,textarea::placeholder{
+  color:var(--secondary-color) ;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl{
+    max-width: 1280px!important
+  }
 }
